@@ -293,7 +293,7 @@
                 else setVal(task.text);
               }}
               onKeyDown={e => {
-                if (e.key === "Enter") (e.target as HTMLInputElement).blur();
+                if (e.key === "Enter") e.currentTarget.blur();
                 if (e.key === "Escape") {
                   setVal(task.text);
                   setEditing(false);
